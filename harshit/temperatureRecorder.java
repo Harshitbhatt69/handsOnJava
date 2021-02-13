@@ -7,6 +7,7 @@ public class temperatureRecorder {
 		Scanner sc = new Scanner(System.in);
 		int max=-1000;
 		int min=1000;
+		int daymax = 0,daymin = 0;
 		String city[] = {"Delhi","Mumbai","Kolkatta","Chennai","Dehradun"};
 		for(int  i=0;i<10;i++)
 		{
@@ -17,10 +18,12 @@ public class temperatureRecorder {
 				if(temperature[i][j] > max)
 				{
 					max = temperature[i][j];
+					daymax=i;
 				}
 				if(temperature[i][j] < min)
 				{
 					min = temperature[i][j];
+					daymin=i;
 				}
 			}
 		}
@@ -45,6 +48,8 @@ public class temperatureRecorder {
 			if(flag && flag2)
 				break;
 		}
+		System.out.println("Maximum temperature on day "+daymax);
+		System.out.println("Minimum temperature on day "+daymin);
 		sc.close();
 	}
 
