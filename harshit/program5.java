@@ -32,7 +32,7 @@ public class program5 {
 			}
 			arr[4][i]=colTotal;
 		}
-		System.out.println("\t     Quater1    Quater2    Quater3    Quater4      Total ");
+		System.out.println("\t     Quater1   Quater2   Quater3   Quater4     Total ");
 		for(int i=0;i<5;i++)
 		{
 			if(i==0)
