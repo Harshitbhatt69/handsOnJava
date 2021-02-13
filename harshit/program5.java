@@ -32,24 +32,34 @@ public class program5 {
 			}
 			arr[4][i]=colTotal;
 		}
-		System.out.println("\t   Quater1   Quater2   Quater3   Quater4     Total ");
+		System.out.println("\t     Quater1    Quater2    Quater3    Quater4      Total ");
 		for(int i=0;i<5;i++)
 		{
 			if(i==0)
-				System.out.print("Salesman1  ");
+				System.out.print("Salesman1   ");
 			else if(i==1)
-				System.out.print("Salesman2  ");
+				System.out.print("Salesman2   ");
 			else if(i==2)
-				System.out.print("Salesman3  ");
+				System.out.print("Salesman3   ");
 			else if(i==3)
-				System.out.print("Salesman4  ");
-			else if(i==4)
-				System.out.print("Total      ");
-			for(int j=0;j<5;j++)
+				System.out.print("Salesman4   ");
+			if(i!=4)
+				{
+					for(int j=0;j<5;j++)
+					{
+						System.out.print("    "+arr[i][j]+"     ");
+					}
+					System.out.println();
+				}
+			if(i==4)
 			{
-				System.out.print("    "+arr[i][j]+"     ");
+				System.out.print("Total       ");
+				for(int j=0;j<5;j++)
+				{
+					System.out.print("    "+arr[i][j]+"    ");
+				}
+				System.out.println();
 			}
-			System.out.println();
 		}
 		sc.close();
 	}
