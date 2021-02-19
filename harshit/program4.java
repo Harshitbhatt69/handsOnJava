@@ -36,3 +36,5 @@ public class program4 {
 	}
 
 }
+//wap to find out the sum of all n element which are located at even places
+//wap to insert an element after recognising the specified key
