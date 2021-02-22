@@ -2,10 +2,9 @@ package harshit;
 import java.util.Scanner;
 public class findKey {
 
-	public static void main(String[] args) {
+	static public void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner in = new Scanner(System.in);
-		int n=0;
 		System.out.println("Enter the Size of array");
 		int size = in.nextInt();
 		int arr[] = new int[size+1];
