@@ -1,3 +1,4 @@
+//not in syllabus, just try
 package harshit;
 import java.util.Scanner;
 public class Dubey {
