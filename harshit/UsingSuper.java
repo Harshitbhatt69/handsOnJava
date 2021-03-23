@@ -1,50 +1,48 @@
 package harshit;
-
-import java.util.Scanner;
-class Parent
+public class UsingSuper
 {
-	double weight;
-	Parent(double w)
-	{
-		weight=w;
-	}
-	void disp()
-	{
-		System.out.println("Weight = "+weight);
-	}
-	}
-class Child extends Parent
+  
+public static void main (String[]args)
+  {
+    
+DerC ob = new DerC ();
+
+} 
+} 
+class BaseD
 {
-	double height;
-	Child(double w, double h)
-	{
-		super(w);
-		height=h;
-	}
-	void disp()
-	{
-		super.disp();
-		System.out.println("Height = "+height);
-		calc();
-	}
-	void calc()
-	{
-		System.out.println("BMI of the person = "+weight/(height*height));
-	}
-}
-public class UsingSuper {
+  
+BaseD ()
+  {
+    
+System.out.println ("Constructor of class Base");
+  
+} 
+BaseD (int x) 
+  {
+    
+System.out.println ("number inside baseclass :" + x);
+  
+} 
+void Display ()
+  {
+    
+System.out.println ("Content of derived class ");
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Scanner sc=new Scanner(System.in);
-		System.out.println("Demonstrationg use of super keyword");
-		System.out.print("Enter the weight (in kg)= ");
-		double weight=sc.nextDouble();
-		System.out.print("Enter the height (in meteres) = ");
-		double height=sc.nextDouble();
-		Child obj=new Child(weight,height);
-		obj.disp();
-		sc.close();
-	}
+} 
+} 
+class DerC extends BaseD
 
+{
+  
+DerC ()
+  {
+    
+super (87);
+    
+super.Display ();
+    
+System.out.println ("constructor of class Derived");
+
+} 
 }

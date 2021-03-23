@@ -15,10 +15,9 @@ public class Dubey {
 		
 		System.out.print("Semester: ");
 		int sem = sc.nextInt();
-		sc.next();
 		
 		System.out.print("Enter course: ");
-		String course = sc.nextLine();
+		String course = sc.next();
 		
 		System.out.println();
 		
