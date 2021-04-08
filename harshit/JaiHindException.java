@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class JaiHindException {
 	static void ValidStr(String str) throws myException
 	{
-		if(!str.equals("jai hind") && !str.equals("JAI HIND"))
+		if(!str.equalsIgnoreCase("Jai Hind"))
 		{
 			throw new myException("Invalid country");
 		}
@@ -21,6 +21,7 @@ public class JaiHindException {
 			// TODO: handle exception
 			System.out.println("Caught exception !");
 		}
+		System.out.println("REST OF THE CODE................!!");
 		sc.close();
 	}
 }

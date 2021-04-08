@@ -11,7 +11,7 @@ class detail
 	}
 	void disp()
 	{
-		System.out.println("Name = "+name+"\tRoll no. = "+rollno);
+		System.out.println("Name: "+name+"\tRoll no: "+rollno);
 	}
 }
 public class ArrayObject {
@@ -38,7 +38,6 @@ public class ArrayObject {
 		}
 		for(int j=0;j<no;j++)
 		{
-			System.out.println("Student "+(j+1));
 			obj[j].disp();
 		}
 		sc.close();
