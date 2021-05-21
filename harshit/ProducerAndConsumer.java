@@ -31,7 +31,7 @@ class Producer implements Runnable{
 			}
 			Thread.sleep(1000);
 			l1.add(num);
-			System.err.println("Added number "+ num);
+			System.out.println("Added number "+ num);
 			l1.notifyAll();
 		}
 	}
@@ -80,5 +80,4 @@ public class ProducerAndConsumer {
 		t1.start();
 		t2.start();
 	}
-
 }
